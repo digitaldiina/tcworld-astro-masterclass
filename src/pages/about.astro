@@ -1,5 +1,7 @@
 ---
 import '../styles/global.css';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <html lang="en">
@@ -11,15 +13,15 @@ import '../styles/global.css';
 		<title>Astro</title>
 	</head>
 	<body>
-		<a href="/">Home</a>
-		<a href="/about/">About</a>
+		<Navigation />
 		<h1>About</h1>
+		<Footer />
 	</body>
 </html>
 
-<style>
+<!-- <style>
 	h1 {
 	  color: purple;
 	  font-size: 4rem;
 	}
-  </style>
+  </style> -->
