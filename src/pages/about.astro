@@ -1,7 +1,32 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-const pageTitle = "About";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import tekomImage from "../assets/twc24-stgt-5-7-11.jpg";
+import "../styles/global.css";
 ---
-<BaseLayout pageTitle={pageTitle}>
-  <h2>My about page.</h2>
-</BaseLayout>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>About TCWORLD</title>
+	</head>
+	<body>
+		<Header />
+		<h1>All about tcworld conference</h1>
+		<p>
+			Knowledge forge, competence mediator, source of ideas, source of
+			inspiration, point of contact, stage, discussion forum, contact pool
+			... - the tcworld conference brings together participants, speakers,
+			students and exhibitors of "technical communication" from all over
+			the world to the largest industry meeting place.
+		</p>
+		<!-- <p><img src={tekomImage.src} alt="TCWORLD banner" /></p>-->
+		<Footer />
+		<script>
+			import "../scripts/menu.js";
+		</script>
+	</body>
+</html>
